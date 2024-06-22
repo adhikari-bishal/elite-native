@@ -1,0 +1,41 @@
+{
+  "name": "elite-native",
+  "version": "1.0.0",
+  "description": "An elite set of components for react native",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint 'src/**/*.{js,jsx}' --no-cache",
+    "lint:fix": "eslint --fix 'src/**/*.{js,jsx}' --no-cache",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adhikari-bishal/elite-native.git"
+  },
+  "keywords": [
+    "elite native",
+    "react native",
+    "react native components",
+    "expo components"
+  ],
+  "author": "Bishal Adhikari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adhikari-bishal/elite-native/issues"
+  },
+  "homepage": "https://github.com/adhikari-bishal/elite-native#readme",
+  "dependencies": {
+    "prop-types": "^15.8.1",
+    "react": "18.2.0",
+    "react-native": "0.74.1",
+    "react-native-svg": "^15.3.0",
+    "react-native-vector-icons": "^10.1.0"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.24.7",
+    "@babel/preset-react": "^7.24.7",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.34.3"
+  }
+}
