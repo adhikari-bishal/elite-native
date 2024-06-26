@@ -1,0 +1,10 @@
+.idea
+src/
+node_modules/
+babel.config.js
+.eslintignore
+.eslintrc.js
+.gitignore
+*.log
+*.md
+*.sh
