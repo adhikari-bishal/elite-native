@@ -1,24 +1,22 @@
 import React from 'react';
 import {StyleSheet, TouchableOpacity, View} from 'react-native';
-import Icons from 'react-native-vector-icons/MaterialCommunityIcons';
 import colors from '../constants/colors';
 import PropTypes from 'prop-types';
 
-const FloatingActionButton = ({icon, onPress, fabColor, iconColor, ...props}) => {
+const FloatingActionButton = ({icon, onPress, color, ...props}) => {
     return (
         <TouchableOpacity onPress={onPress} style={style.container} {...props}>
-            <View style={[style.fab, {backgroundColor: fabColor ? fabColor : colors.primary}]}>
-                <Icons name={icon} size={24} color={iconColor ? iconColor : colors.white}/>
+            <View style={[style.fab, {backgroundColor: color ? color : colors.primary}]}>
+                {icon}
             </View>
         </TouchableOpacity>
     );
 };
 
 FloatingActionButton.propTypes = {
-    icon: PropTypes.string.isRequired,
+    icon: PropTypes.oneOfType([PropTypes.array, PropTypes.object]).isRequired,
     onPress: PropTypes.func.isRequired,
-    fabColor: PropTypes.string,
-    iconColor: PropTypes.string,
+    color: PropTypes.string,
 };
 
 const style =
