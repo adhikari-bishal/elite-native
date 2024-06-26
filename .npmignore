@@ -1,6 +1,15 @@
+# os
+.DS_Store
+
+# idea
 .idea
+
+# project
+demo/
 src/
 node_modules/
+
+# config
 babel.config.js
 .eslintignore
 .eslintrc.js
