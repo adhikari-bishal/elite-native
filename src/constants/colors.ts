@@ -1,4 +1,4 @@
-var colors = {
+const colors = {
     primary: '#18b0b7',
     secondary: '#E16969',
     background: '#F1F2F6',
@@ -11,4 +11,5 @@ var colors = {
     black: '#333',
     white: '#fffffe',
 };
+
 export default colors;

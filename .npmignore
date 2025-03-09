@@ -10,9 +10,7 @@ node_modules/
 
 # config
 babel.config.js
-.eslintignore
 .eslintrc.js
 .gitignore
 *.log
 *.md
-*.sh
