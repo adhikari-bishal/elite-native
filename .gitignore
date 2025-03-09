@@ -33,3 +33,6 @@ yarn-error.*
 # ide
 .idea
 .code
+
+# build files
+elite-native-*.tgz
