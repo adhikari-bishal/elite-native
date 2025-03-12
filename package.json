@@ -1,31 +1,26 @@
 {
   "name": "elite-native",
-  "version": "1.19.3",
+  "version": "1.19.4",
   "description": "An elite set of components for React Native",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "exports": {
+    ".": "./lib/index.js",
+    "./buttons": "./lib/components/buttons/index.js",
+    "./forms": "./lib/components/forms/index.js",
+    "./loaders": "./lib/components/loaders/index.js"
+  },
+  "files": [
+    "lib",
+    "package.json",
+    "README.md"
+  ],
   "scripts": {
     "clean": "rimraf lib",
     "build": "npm run clean && tsc && babel src --extensions \".ts,.tsx\" --out-dir lib",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}' --no-cache",
     "lint:fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx}' --no-cache"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/adhikari-bishal/elite-native.git"
-  },
-  "keywords": [
-    "elite native",
-    "react native",
-    "react native components",
-    "expo components"
-  ],
-  "author": "Bishal Adhikari",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/adhikari-bishal/elite-native/issues"
-  },
-  "homepage": "https://github.com/adhikari-bishal/elite-native#readme",
   "dependencies": {
     "prop-types": "^15.8.1",
     "react-native-vector-icons": "^10.2.0"
@@ -53,9 +48,20 @@
     "typescript": "^5.8.2",
     "undici-types": "^7.4.0"
   },
-  "files": [
-    "lib",
-    "package.json",
-    "README.md"
-  ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adhikari-bishal/elite-native.git"
+  },
+  "keywords": [
+    "elite native",
+    "react native",
+    "react native components",
+    "expo components"
+  ],
+  "author": "Bishal Adhikari",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adhikari-bishal/elite-native/issues"
+  },
+  "homepage": "https://github.com/adhikari-bishal/elite-native#readme"
 }
