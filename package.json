@@ -1,6 +1,6 @@
 {
   "name": "elite-native",
-  "version": "1.5.0",
+  "version": "1.19.0",
   "description": "An elite set of components for React Native",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -21,7 +21,7 @@
     "expo components"
   ],
   "author": "Bishal Adhikari",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/adhikari-bishal/elite-native/issues"
   },
