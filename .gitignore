@@ -36,3 +36,6 @@ yarn-error.*
 
 # build files
 elite-native-*.tgz
+
+# project
+package-lock.json
