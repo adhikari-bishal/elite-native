@@ -1,6 +1,6 @@
 {
   "name": "elite-native",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "An elite set of components for React Native",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
