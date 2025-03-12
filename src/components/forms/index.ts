@@ -9,5 +9,6 @@ export {default as PasswordInput} from "./PasswordInput";
 export {default as RadioButton} from "./RadioButton";
 export {default as Select} from "./Select";
 export {default as SwitchSelector} from "./SwitchSelector";
+export {default as TextInput} from "./TextInput";
 export {default as TextareaInput} from "./TextareaInput";
 export {default as TimePicker} from "./TimePicker";
