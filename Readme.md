@@ -51,13 +51,16 @@ import {Button, TextInput, Select} from "elite-native";
 const App = () => {
     return (
         <View>
-            <TextInput label="Name" placeholder="Enter your name"/>
-            <Select label="Country" options={[{label: 'USA', value: 'us'}]}/>
+            <TextInput control={control} label="Name" name="name" placeholder="Enter your name"/>
             <Button title="Submit" onPress={() => alert("Submitted!")}/>
         </View>
     );
 };
 ```
+
+## 📖 Wiki
+
+Check out the [Wiki](https://github.com/adhikari-bishal/elite-native/wiki) for more documentation.
 
 ## Roadmap
 
