@@ -1,85 +1,105 @@
 import React from "react";
-import {
-  ActivityIndicator,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-} from "react-native";
+import {ActivityIndicator, StyleSheet, Text, TextStyle, TouchableOpacity, ViewStyle,} from "react-native";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 import colors from "../../constants/colors";
 
 interface ButtonProps {
-  label: string;
-  leftIcon?: string;
-  rightIcon?: string;
-  onPress: () => void;
-  theme?: string;
-  backgroundColor?: string;
-  textColor?: string;
-  marginTop?: number;
-  marginBottom?: number;
-  uppercase?: boolean;
-  loading?: boolean;
+    label: string;
+    leftIcon?: string;
+    rightIcon?: string;
+    onPress: () => void;
+    backgroundColor?: string;
+    textColor?: string;
+    marginTop?: number;
+    marginBottom?: number;
+    uppercase?: boolean;
+    loading?: boolean;
+    buttonStyle?: ViewStyle;
+    textStyle?: TextStyle;
+    iconStyle?: object;
 }
 
 const Button: React.FC<ButtonProps> = ({
-  label,
-  leftIcon,
-  rightIcon,
-  onPress,
-  backgroundColor = colors.primary,
-  textColor = colors.white,
-  marginTop = 10,
-  marginBottom = 10,
-  uppercase = false,
-  loading = false,
-}) => {
-  return (
-    <TouchableOpacity style={styles.button} onPress={onPress}>
-      {leftIcon && (
-        <Icon name={leftIcon} color={textColor} size={21} style={styles.icon} />
-      )}
+                                           label,
+                                           leftIcon,
+                                           rightIcon,
+                                           onPress,
+                                           backgroundColor = colors.primary,
+                                           textColor = colors.white,
+                                           marginTop = 10,
+                                           marginBottom = 10,
+                                           uppercase = false,
+                                           loading = false,
+                                           buttonStyle,
+                                           textStyle,
+                                           iconStyle,
+                                       }) => {
+    return (
+        <TouchableOpacity
+            style={[
+                styles.button,
+                {backgroundColor, marginTop, marginBottom},
+                buttonStyle,
+            ]}
+            onPress={onPress}
+            disabled={loading}
+        >
+            {leftIcon && (
+                <Icon
+                    name={leftIcon}
+                    color={textColor}
+                    size={21}
+                    style={[styles.icon, iconStyle]}
+                />
+            )}
 
-      {loading ? (
-        <ActivityIndicator size="small" color={textColor} />
-      ) : (
-        <Text style={styles.text}>{label}</Text>
-      )}
+            {loading ? (
+                <ActivityIndicator size="small" color={textColor}/>
+            ) : (
+                <Text
+                    style={[
+                        styles.text,
+                        {
+                            color: textColor,
+                            textTransform: uppercase ? "uppercase" : "none",
+                        },
+                        textStyle,
+                    ]}
+                >
+                    {label}
+                </Text>
+            )}
 
-      {rightIcon && (
-        <Icon
-          name={rightIcon}
-          color={textColor}
-          size={21}
-          style={styles.icon}
-        />
-      )}
-    </TouchableOpacity>
-  );
+            {rightIcon && (
+                <Icon
+                    name={rightIcon}
+                    color={textColor}
+                    size={21}
+                    style={[styles.icon, iconStyle]}
+                />
+            )}
+        </TouchableOpacity>
+    );
 };
 
 const styles = StyleSheet.create({
-  button: {
-    flexDirection: "row",
-    justifyContent: "flex-start",
-    backgroundColor: colors.primary,
-    borderRadius: 7,
-    padding: 10,
-    marginTop: 10,
-    marginBottom: 10,
-  },
-  text: {
-    width: "100%",
-    color: colors.white,
-    textAlign: "center",
-    fontSize: 15,
-    fontWeight: "700",
-    textTransform: "none",
-    paddingHorizontal: 10,
-  },
-  icon: {
-    alignSelf: "center",
-  },
+    button: {
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "center",
+        borderRadius: 7,
+        paddingHorizontal: 15,
+        paddingVertical: 10,
+        alignSelf: "flex-start",
+    },
+    text: {
+        fontSize: 15,
+        fontWeight: "700",
+        textAlign: "center",
+    },
+    icon: {
+        marginHorizontal: 5,
+    },
 });
 
 export default Button;
