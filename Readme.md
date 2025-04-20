@@ -9,26 +9,32 @@ A high-quality set of reusable components for React Native.
 - **Button** - Standard button component.
 - **Text Button** - A button with text-only styling.
 - **Floating Action Button** - A floating action button for quick actions.
+- **Expandable - Floating Action Button** - A floating action button for multiple actions.
+- **Floating Action Button Group** - A floating action button for multiple elements.
 
 ### 📌 Form Inputs
 
-- **CheckboxGroup** - A group of checkboxes for multiple selections.
+- **Checkbox Group** - A group of checkboxes for multiple selections.
 - **Checkbox** - A single checkbox component.
-- **DatePicker** - A date picker for selecting dates.
-- **EmailInput** - An input field for email addresses with validation.
-- **MaskedInput** - An input field with customizable masking.
-- **NepaliDatePicker** - A date picker supporting Nepali date format.
-- **NumberInput** - An input field for numeric values.
-- **PasswordInput** - An input field with secure text entry.
-- **RadioButton** - A radio button for single selection options.
+- **Date Picker** - A date picker for selecting dates.
+- **Email Input** - An input field for email addresses with validation.
+- **Masked Input** - An input field with customizable masking.
+- **Nepali Date Picker** - A date picker supporting Nepali date format.
+- **Number Input** - An input field for numeric values.
+- **Password Input** - An input field with secure text entry.
+- **Radio Button** - A radio button for single selection options.
 - **Select** - A dropdown select component.
-- **SwitchSelector** - A switch-style selector for toggling between options.
-- **TextareaInput** - A multi-line text input field.
-- **TimePicker** - A time picker for selecting time values.
+- **Switch Selector** - A switch-style selector for toggling between options.
+- **Textarea Input** - A multi-line text input field.
+- **Time Picker** - A time picker for selecting time values.
 
 ### 📌 Loaders
 
 - **Full-Screen Loader** - A loader that covers the entire screen during loading states.
+
+### 📌 Modals
+
+- **Alert Modal** - A customizable modal to display alerts.
 
 ## Compatibility
 
