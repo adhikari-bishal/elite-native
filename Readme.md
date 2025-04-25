@@ -41,6 +41,10 @@ A high-quality set of reusable components for React Native.
 
 - **Color Selector** - A component to display and select colors.
 
+### 📌 Carousels
+
+- **Carousel** - A carousel component.
+
 ## Compatibility
 
 - **Tested with**: React Native (Expo)
