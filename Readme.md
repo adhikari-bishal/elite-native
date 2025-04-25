@@ -37,6 +37,10 @@ A high-quality set of reusable components for React Native.
 
 - **Alert Modal** - A customizable modal to display alerts.
 
+### 📌 Selectors
+
+- **Color Selector** - A component to display and select colors.
+
 ## Compatibility
 
 - **Tested with**: React Native (Expo)
