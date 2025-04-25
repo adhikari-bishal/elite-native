@@ -8,6 +8,7 @@ A high-quality set of reusable components for React Native.
 
 - **Button** - Standard button component.
 - **Text Button** - A button with text-only styling.
+- **Counter Button** - A counter button.
 - **Floating Action Button** - A floating action button for quick actions.
 - **Expandable - Floating Action Button** - A floating action button for multiple actions.
 - **Floating Action Button Group** - A floating action button for multiple elements.
