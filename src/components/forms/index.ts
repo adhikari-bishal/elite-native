@@ -12,3 +12,4 @@ export {default as SwitchSelector} from "./SwitchSelector";
 export {default as TextInput} from "./TextInput";
 export {default as TextareaInput} from "./TextareaInput";
 export {default as TimePicker} from "./TimePicker";
+export {default as ToggleSwitch} from "./ToggleSwitch";

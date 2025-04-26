@@ -13,10 +13,14 @@ A high-quality set of reusable components for React Native.
 - **Expandable - Floating Action Button** - A floating action button for multiple actions.
 - **Floating Action Button Group** - A floating action button for multiple elements.
 
+### 📌 Carousels
+
+- **Carousel** - A carousel component.
+
 ### 📌 Form Inputs
 
-- **Checkbox Group** - A group of checkboxes for multiple selections.
 - **Checkbox** - A single checkbox component.
+- **Checkbox Group** - A group of checkboxes for multiple selections.
 - **Date Picker** - A date picker for selecting dates.
 - **Email Input** - An input field for email addresses with validation.
 - **Masked Input** - An input field with customizable masking.
@@ -27,7 +31,9 @@ A high-quality set of reusable components for React Native.
 - **Select** - A dropdown select component.
 - **Switch Selector** - A switch-style selector for toggling between options.
 - **Textarea Input** - A multi-line text input field.
+- **Text Input** - A customizable text input field.
 - **Time Picker** - A time picker for selecting time values.
+- **Toggle Switch** - A toggle switch input.
 
 ### 📌 Loaders
 
@@ -40,10 +46,6 @@ A high-quality set of reusable components for React Native.
 ### 📌 Selectors
 
 - **Color Selector** - A component to display and select colors.
-
-### 📌 Carousels
-
-- **Carousel** - A carousel component.
 
 ## Compatibility
 
@@ -61,9 +63,16 @@ yarn add elite-native
 ## Usage Example
 
 ```tsx
-import {Button, TextInput, Select} from "elite-native";
+import {useForm} from 'react-hook-form';
+import {Button, TextInput} from "elite-native";
 
 const App = () => {
+    const {control, handleSubmit} = useForm();
+
+    const onSubmit = (data: any) => {
+        console.log(data);
+    };
+    
     return (
         <View>
             <TextInput control={control} label="Name" name="name" placeholder="Enter your name"/>
