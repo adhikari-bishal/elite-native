@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import {FlatList, Modal, StyleSheet, Text, TouchableOpacity, View,} from "react-native";
 import {Controller} from "react-hook-form";
-import PropTypes from "prop-types";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 import Button from "../buttons/Button";
 import useNepaliDate from "../../hooks/useNepaliDate";
@@ -121,13 +120,6 @@ const NepaliDatePicker = ({control, name, label, ...props}) => {
             )}
         />
     );
-};
-
-NepaliDatePicker.propTypes = {
-    control: PropTypes.object.isRequired,
-    name: PropTypes.string.isRequired,
-    label: PropTypes.string.isRequired,
-    validationRules: PropTypes.object,
 };
 
 const styles = StyleSheet.create({

@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import React from "react";
 import {Controller} from "react-hook-form";
 import {StyleSheet, Text, TextStyle, TouchableOpacity, View,} from "react-native";
@@ -84,22 +83,6 @@ const RadioButton: React.FC<RadioButtonProps> = ({
             )}
         />
     );
-};
-
-RadioButton.propTypes = {
-    control: PropTypes.object.isRequired,
-    name: PropTypes.string.isRequired,
-    label: PropTypes.string,
-    validationRules: PropTypes.object,
-    options: PropTypes.arrayOf(
-        PropTypes.exact({
-            label: PropTypes.string.isRequired,
-            value: PropTypes.string.isRequired,
-        }),
-    ).isRequired,
-    optionsHorizontal: PropTypes.bool,
-    optionSelectedColor: PropTypes.string,
-    labelStyle: PropTypes.object,
 };
 
 const styles = StyleSheet.create({

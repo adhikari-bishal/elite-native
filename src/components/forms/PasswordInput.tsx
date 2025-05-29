@@ -3,7 +3,6 @@ import {Controller} from "react-hook-form";
 import {StyleSheet, Text, TextInput, View} from "react-native";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 import colors from "../../constants/colors";
-import PropTypes from "prop-types";
 
 interface PasswordInputProps {
     control: any;
@@ -102,14 +101,5 @@ const styles = StyleSheet.create({
         alignSelf: "stretch",
     },
 });
-
-PasswordInput.propTypes = {
-    control: PropTypes.object.isRequired,
-    name: PropTypes.string.isRequired,
-    label: PropTypes.string,
-    placeHolder: PropTypes.string,
-    validationRules: PropTypes.object,
-    labelInline: PropTypes.bool,
-};
 
 export default PasswordInput;

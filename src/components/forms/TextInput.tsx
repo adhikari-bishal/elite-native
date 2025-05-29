@@ -1,6 +1,5 @@
 import {Controller} from "react-hook-form";
 import React from "react";
-import PropTypes from "prop-types";
 import {StyleSheet, Text, TextInput as Input, View, ViewStyle,} from "react-native";
 import colors from "../../constants/colors";
 
@@ -113,18 +112,5 @@ const styles = StyleSheet.create({
         marginTop: 4,
     },
 });
-
-TextInput.propTypes = {
-    control: PropTypes.object.isRequired,
-    name: PropTypes.string.isRequired,
-    label: PropTypes.string,
-    placeholder: PropTypes.string,
-    validationRules: PropTypes.object,
-    errorMessage: PropTypes.string,
-    errorColor: PropTypes.string,
-    style: PropTypes.object,
-    leftContent: PropTypes.element,
-    rightContent: PropTypes.element,
-};
 
 export default TextInput;

@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import {Modal, ScrollView, StyleSheet, Text, TouchableOpacity, View,} from "react-native";
-import PropTypes from "prop-types";
 import {Controller} from "react-hook-form";
 import colors from "../../constants/colors";
 
@@ -91,13 +90,6 @@ const DatePicker: React.FC<DatePickerProps> = ({
             )}
         />
     );
-};
-
-DatePicker.propTypes = {
-    control: PropTypes.object.isRequired,
-    name: PropTypes.string.isRequired,
-    label: PropTypes.string.isRequired,
-    validationRules: PropTypes.object,
 };
 
 const styles = StyleSheet.create({

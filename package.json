@@ -1,7 +1,7 @@
 {
   "name": "elite-native",
   "version": "1.24.0",
-  "description": "An elite set of components for React Native",
+  "description": "An elite set of components for React Native - Expo",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "exports": {
@@ -21,14 +21,11 @@
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}' --no-cache",
     "lint:fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx}' --no-cache"
   },
-  "dependencies": {
-    "prop-types": "^15.8.1",
-    "react-native-vector-icons": "^10.2.0"
-  },
   "peerDependencies": {
     "react": ">=18.2.0",
     "react-hook-form": "^7.54.2",
-    "react-native": ">=0.74.1"
+    "react-native": ">=0.74.1",
+    "react-native-vector-icons": "^10.2.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.24.7",

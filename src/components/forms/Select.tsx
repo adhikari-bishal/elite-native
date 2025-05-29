@@ -1,6 +1,5 @@
 import React, {useRef, useState} from "react";
 import {FlatList, Pressable, StyleSheet, Text, View} from "react-native";
-import PropTypes from "prop-types";
 import {Controller} from "react-hook-form";
 import colors from "../../constants/colors";
 
@@ -66,19 +65,6 @@ const Select: React.FC<SelectProps> = ({control, name, label, options, validatio
             )}
         />
     );
-};
-
-Select.propTypes = {
-    control: PropTypes.object.isRequired,
-    name: PropTypes.string.isRequired,
-    label: PropTypes.string.isRequired,
-    options: PropTypes.arrayOf(
-        PropTypes.exact({
-            label: PropTypes.string.isRequired,
-            value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-        }).isRequired
-    ).isRequired,
-    validationRules: PropTypes.object,
 };
 
 const styles = StyleSheet.create({

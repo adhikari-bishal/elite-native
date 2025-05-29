@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import {StyleSheet, Switch, Text, View} from "react-native";
-import PropTypes from "prop-types";
 import {Controller} from "react-hook-form";
 import colors from "../../constants/colors";
 
@@ -60,17 +59,6 @@ const ToggleSwitch: React.FC<ToggleSwitchProps> = ({
             )}
         />
     );
-};
-
-ToggleSwitch.propTypes = {
-    control: PropTypes.object.isRequired,
-    name: PropTypes.string.isRequired,
-    label: PropTypes.string,
-    validationRules: PropTypes.object,
-    onColor: PropTypes.string,
-    thumbColor: PropTypes.string,
-    trackColor: PropTypes.object,
-    disabled: PropTypes.bool,
 };
 
 const styles = StyleSheet.create({

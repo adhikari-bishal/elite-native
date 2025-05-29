@@ -1,7 +1,6 @@
 import React from "react";
 import {Controller, FieldValues, RegisterOptions,} from "react-hook-form";
 import {StyleSheet, Text, TextInput, TextInputProps, TextStyle, View, ViewStyle,} from "react-native";
-import PropTypes from "prop-types";
 import colors from "../../constants/colors";
 
 interface EmailInputProps {
@@ -103,17 +102,5 @@ const styles = StyleSheet.create({
         alignSelf: "stretch",
     },
 });
-
-EmailInput.propTypes = {
-    control: PropTypes.any.isRequired,
-    name: PropTypes.string.isRequired,
-    label: PropTypes.string,
-    placeholder: PropTypes.string,
-    validationRules: PropTypes.object,
-    labelInline: PropTypes.bool,
-    style: PropTypes.object,
-    inputStyle: PropTypes.object,
-    textInputProps: PropTypes.object,
-};
 
 export default EmailInput;
